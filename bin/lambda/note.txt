@@ -1,0 +1,7 @@
+1)lambda sort,forEach
+2)efdecively final
+3)default methoden mit Implementierung in interfaces
+4)static methoden mit Implementierung in interfaces
+5)@FunctionalInteface (like Runnable, ActionListener, Comparator)
+6)statische/instance Methodenreferenzen
+
