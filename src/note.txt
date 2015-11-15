@@ -1,0 +1,25 @@
+1)lambda sort,forEach
+2)efdecively final
+3)default methoden mit Implementierung in interfaces
+4)static methoden mit Implementierung in interfaces
+5)@FunctionalInteface (like Runnable, ActionListener, Comparator)
+6)statische/instance Methodenreferenzen
+
+1)die Lambda-ausdrucke
+
+x->x*5
+
+List:
+replaceAll (nimmt UnaryOperator an);
+forEach (nimmt Consumer an);
+sort(( x, y) -> x-y);
+
+2)Funktionale Interfaces - bestehen nur aus einer einzelnen Methode zB. Runnable
+@FunctionalInterface
+
+AuBer der Lambda-ausdrucke ist es nicht moglich eine Excpetion zu werfen.
+
+3)Ein Interface darf nun auch statische Methoden erhalten;
+4)Methoden durfen nun in einem Interface eine Implementierung besitzen; 
+
+
