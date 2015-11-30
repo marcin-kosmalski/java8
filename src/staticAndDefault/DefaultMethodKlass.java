@@ -1,4 +1,4 @@
-package lambda;
+package staticAndDefault;
 
 public class DefaultMethodKlass implements InterfaceWithDefaultMethod {
 

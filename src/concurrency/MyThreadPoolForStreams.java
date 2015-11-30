@@ -48,21 +48,6 @@ public class MyThreadPoolForStreams {
 
 	}
 
-	@SuppressWarnings("unchecked")
-	public <T, M> Stream<M> parallelOLD(Stream<T> stream,
-			Function<T, M> transformation) {
-
-		return (Stream<M>) stream.map(val -> {
-			try {
-				return executorService.submit(() -> transformation).get()
-						.apply(val);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			return val;
-		});
-	}
-
 	public MyThreadPoolForStreams() {
 		run();
 	}
@@ -96,16 +81,6 @@ class Task {
 			e.printStackTrace();
 		}
 		return Integer.valueOf(value.getVal());
-	}
-
-	public Integer doBigJobOLD(String value) {
-
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		return Integer.valueOf(value);
 	}
 
 }

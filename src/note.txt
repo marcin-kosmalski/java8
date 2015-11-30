@@ -1,3 +1,7 @@
+
+TODO:
+1)review: IntStream,DoubleStream,Stream
+
 1)lambda sort,forEach
 2)efdecively final
 3)default methoden mit Implementierung in interfaces
@@ -21,5 +25,16 @@ AuBer der Lambda-ausdrucke ist es nicht moglich eine Excpetion zu werfen.
 
 3)Ein Interface darf nun auch statische Methoden erhalten;
 4)Methoden durfen nun in einem Interface eine Implementierung besitzen; 
+
+5)
+ <U> U reduce(U identity,
+              BiFunction<U, ? super T, U> accumulator,
+              BinaryOperator<U> combiner);
+ 
+Here, the identity element is both an initial seed value for the reduction and a default result if there are no input elements. 
+The accumulator function takes a partial result and the next element, and produces a new partial result. 
+The combiner function combines two partial results to produce a new partial result. 
+(The combiner is necessary in parallel reductions, where the input is partitioned, a partial accumulation computed for each partition, 
+and then the partial results are combined to produce a final result.)
 
 

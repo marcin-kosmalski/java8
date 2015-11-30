@@ -1,4 +1,4 @@
-package lambda;
+package staticAndDefault;
 import java.util.function.Function;
 
 public class ConverterStrToInt implements Function<String, Integer> {
