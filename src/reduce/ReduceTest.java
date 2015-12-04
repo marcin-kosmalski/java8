@@ -29,6 +29,8 @@ public class ReduceTest extends Base {
 
 		// returns integer with identit and accumulator
 		p(Arrays.asList(1, 2, 3, 4).stream().reduce(0, Math::max));
+		
+	
 
 		// returns optional only with accumulator
 		p(Arrays.asList(1, 2, 3, 4).stream().reduce((k1, k2) -> k1 + k2).get());
