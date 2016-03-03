@@ -18,14 +18,14 @@ public class CollectTest extends Base {
 	public CollectTest() {
 
 		// groupBy();
-		// groupByIntToList();
+		groupByIntToList();
 		// partitionByEvenOddNumber();
 		// groupBySum();
 		// groupByMaxNum();
 		// joinWithPrefix();
 		// collectToMap();
 
-		getIdWithMaxNumUnits();
+		//getIdWithMaxNumUnits();
 	}
 
 	public void collectToMap() {
